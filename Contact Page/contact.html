@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="contact.css">
+        <link href="Pisar.ico" rel="Icon">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <img src="logo.png">
+            <ul>
+                <li><a href="home.html">Home</a></li>&nbsp;
+                <li><a href="about.html">About Us</a></li>&nbsp;
+                <li><a href="menu.html">Menu</a></li>&nbsp;
+                <li id="contact"><a href="contact.html">Contact</a></li>&nbsp;
+            </ul>
+        </div>
+
+        <!-- Contact Page Banner -->
+        <div class="banner">
+            <div>
+                <h1>Contact Us</h1>
+                <h3>GET IN TOUCH OR BOOK A TABLE</h3>
+            </div>
+        </div>
+
+        <!-- Contact and Booking Forms -->
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="contactMessage"></p>
+            </div>
+
+            <div class="booking-form">
+                <h2>Booking Form</h2>
+                <form id="bookingForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="booking-name" name="booking-name" placeholder="Your Name" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" placeholder="No. of Guests" required>
+
+                    <button type="submit">Book Now</button>
+                </form>
+                
+            </div>
+            <div id="popupBox" class="popup-box">
+                <div class="popup-content">
+                    <span class="close-btn" id="closePopup">&times;</span>
+                    <p id="popupMessage"></p>
+                </div>
+            </div>
+        </div>
+        <script src="contact.js"></script>
+
+    </body>
+
+        <!-- Footer -->
+        <footer>
+            <div class="section">
+                <h1>About Us</h1>
+                <div class="content">
+                    <p><a href="home.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                    <p>Gallery</p>
+                </div>
+    
+            </div>        
+            <div class="section"v>
+                <h1>Food & Drinks</h1>
+                <div class="content">
+                    <p>Breakfast</p>
+                    <p>Lunch</p>
+                    <p>Dinner</p>
+                </div>
+            </div>        
+            <div class="section">
+                <h1>Contact Info</h1>
+                <div class="content">
+                    <p><img src="location.png" alt="location-icon" class="icon">#278H, Street 201R, Kroalkor Village, Sangkat Kilometer 6, Khan Russey Keo , Phnom Penh, Cambodia</p>
+                    <p><img src="call.png" alt="call-icon" class="icon">+855 12 266 631</p>
+                    <P><img src="email.webp" alt="email-icon" class="icon"><a href="mailto:info@aupp.edu.kh" style="text-decoration: none; color: inherit;">info@aupp.edu.kh</a></P>
+                </div>
+            </div>        
+            
+            <div class="section">
+                <h1>Reservation</h1>
+                <div class="content">
+                    <p><em>Book a table with us now!</em></p>
+                    <div class="media">
+                        <a href="https://www.facebook.com/AUPPkh/" target="_blank"><img src="fb.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/aupp.edu.kh/?hl=en" target="_blank"><img src="ig.png" alt="Instagram"></a>
+                        <a href="tel:+855 12 266 631"><img src="phone.png" alt="Phone"></a>
+                    </div>
+                    
+                </div>
+            </div>        
+            <div class="section">
+                <h1>Opening Hours</h1>
+                <div class="content">
+                    <p>Mon-Fri: 6:30am - 9:30pm</p>
+                    <p>Sat & Sun: 7:30am - 10:30pm</p>
+                </div>
+            </div>        
+            <div id="logo">
+                <div class="content">
+                    <img src="Pisar-footer-.png" id="footer-logo">
+                </div>
+    
+            </div>  
+        </footer>
+        <p id="credit">© 2024 - All Rights Reserved - Pisa</p>
+</html>

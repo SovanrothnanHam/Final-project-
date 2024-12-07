@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+/* Navigation Bar */
+.navbar {
+    font-size: 18px;
+    width: 85%;
+    height: fit-content;
+    margin-left: 20px;
+    margin-right: 2px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 15vh;
+    margin-inline-end: auto;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(144, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: 88vh;
+    background-image: linear-gradient(rgba(59, 0, 0, 0.3), rgba(59, 0, 0, 0.3)),
+    url('background.jpg');
+    opacity: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner div {
+    margin-top: -75px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 7em;
+    font-family: cursive;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+.banner h3 {
+    color: white;
+    font-size: 2em;
+    font-family: cursive;
+    -webkit-text-stroke: 0.5px rgb(255, 191, 0);
+}
+
+/* Contact and Booking Forms */
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.contact-form, .booking-form {
+    width: 40%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-form h2, .booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(144, 0, 0);
+}
+
+.contact-form label, .booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(59, 0, 0);
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea,
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(144, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(107, 0, 0);
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(71, 0, 0, 1);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.section, #logo {
+    width: 30vw;
+}
+
+footer h1, footer p, #logo {
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.content {
+    width: 60%;
+    margin: 2px auto;
+}
+
+.icon {
+    width: 20px;
+    height: fit-content;
+    margin-right: 10px;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media img {
+    width: fit-content;
+    height: 50px;
+}
+
+.media img:hover {
+    height: 60px;
+    width: fit-content;
+}
+
+#footer-logo {
+    width: 130%;
+    position: relative;
+    left: -20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(255, 242, 0);
+}
+
+#credit {
+    text-align: center;
+    margin-top: 10px;
+    height: 4vh;
+}
+
+/* Popup Box Styles */
+.popup-box {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
